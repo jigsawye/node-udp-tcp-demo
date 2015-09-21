@@ -15,7 +15,7 @@ udp.on('message', function(msg, rinfo) {
 var tcp = net.createServer(function(socket) {
   console.log('CONNECTED:' + socket.remotePort + ' Port.');
 
-  client.push(sock);
+  client.push(socket);
 
   socket.on('data', function(data) {
     console.log('TCP data: ' + data);
