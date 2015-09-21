@@ -18,5 +18,5 @@
 ```shell
   node tcp-client.js
 ```
-你可以在 command line 輸入訊息透過 TCP 傳遞至 server，
+你可以在 command line 輸入訊息透過 TCP 傳遞至 server，  
 也可以在 server side 的 command line 輸入訊息透過 TCP 傳遞至 cliet。
