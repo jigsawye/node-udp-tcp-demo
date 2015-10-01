@@ -22,6 +22,10 @@ var tcp = net.createServer(function(socket) {
     socket.write('You said: ' + data);
   });
 
+  socket.on('error', function(error) {
+    console.log(error);
+  });
+
   socket.on('close', function(data) {
     console.log('CLOSED: ' + socket.remotePort);
   });
