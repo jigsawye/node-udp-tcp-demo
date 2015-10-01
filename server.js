@@ -28,6 +28,7 @@ var tcp = net.createServer(function(socket) {
 
   socket.on('close', function(data) {
     console.log('CLOSED: ' + socket.remotePort);
+    client = [];
   });
 
 });
